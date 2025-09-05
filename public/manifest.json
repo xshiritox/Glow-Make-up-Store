@@ -1,0 +1,23 @@
+{
+  "name": "Kroma",
+  "short_name": "Kroma",
+  "description": "Tu mercado en línea para comprar y vender productos, propiedades y servicios",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "/Logo.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Logo.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}

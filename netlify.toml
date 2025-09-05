@@ -1,0 +1,42 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+  functions = "functions"
+
+# Redirecciones
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers para archivos estáticos
+[[headers]]
+  for = "/*.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    X-Robots-Tag = "all"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Content-Type = "application/javascript; charset=utf-8"
+
+[[headers]]
+  for = "/*.mjs"
+  [headers.values]
+    Content-Type = "application/javascript; charset=utf-8"
+
+[[headers]]
+  for = "*.ts"
+  [headers.values]
+    Content-Type = "application/javascript; charset=utf-8"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Content-Type = "text/css; charset=utf-8"
+
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Content-Type = "text/html; charset=utf-8"
